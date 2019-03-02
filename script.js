@@ -198,7 +198,7 @@ if (height || height === 0) {
   
   */
 //Coding challange 2
-var jName ="john'sTeam";
+/*var jName ="john'sTeam";
 var mName ="mark'sTeam";
 
 var firstJohn = 5;
@@ -220,3 +220,112 @@ var teamMikeAverage = (firstMike + secondMike + thirdMike)/3;
     } else {
       console.log(mName + ' won with an average score of ' + teamMikeAverage);
     }
+    */
+
+    //functions
+    /*function calculateAge(year) {
+      return 2018 - year;
+    }
+
+    var ageDanielle = calculateAge(1989);
+    var ageThom = calculateAge(1979);
+    var ageJohn = calculateAge(1948);
+    console.log(ageDanielle, ageThom, ageJohn);
+
+    function yearsUntilRetirement(year, firstName) {
+      var age = calculateAge(year);
+      var retirement = 65 - age;
+
+      if(retirement > 0) {
+        console.log(firstName = ' retires in '+ retirement + ' years.');
+    } else {
+      console.log(firstName + ' is already retired.')
+
+    }
+      }
+    yearsUntilRetirement(1990,'Danielle');
+    yearsUntilRetirement(1979, 'Thom');
+    yearsUntilRetirement(1948, 'John');
+   */
+  
+   //Function Statements & Expressions
+   //Function Declaration Example:
+   //Function whatDoYouDo(job, firstName){}
+
+   
+
+   //Function Expression Example:
+    /*var whatDoYouDo = function(job, firstName) {
+      switch(job) {
+        case 'teacher':
+          return firstName + ' teaches kids how to code';
+        case 'driver':
+          return firstName + ' drives an uber in Dallas';
+        case 'designer':
+          return firstName + ' designs beautiful websites';
+        default:
+          return firstName + ' does something else';
+      }
+   }
+   console.log(whatDoYouDo('teacher', 'John'));
+   console.log(whatDoYouDo('designer', 'Dean'));
+   console.log(whatDoYouDo('default', 'Mark'));
+   console.log(whatDoYouDo('driver', 'Bob')); 
+   */
+
+   //Arrays****
+
+   //Initialize New Array
+   /*var names = ['John', 'Mark','Jane'];
+   var years = new Array(1990, 1969, 1948);
+
+   console.log(names[2]);
+   console.log(names.length);
+
+   //Mutate Data
+   names[1] = 'Ben';
+   names[names.length] = 'Mary';
+   console.log(names);
+
+   //Different Data Types
+
+   var john = ['John', 'Smith', 1990, 'teacher', false];
+   john.push('blue');
+   john.unshift('Mr');
+
+   john.pop();
+   john.pop();
+   john.shift();
+   console.log(john);
+
+   console.log(john.indexOf(1990));
+
+   var isDesigner = john.indexOf('designer') === -1 ? 'John is NOT a designer' : 'John IS a designer';
+   console.log(isDesigner);
+
+   //Coding Challange: */
+
+   function tipCalculator(bill){
+     var percentage; 
+     if (bill < 50) {
+       percentage = .2;
+     } else if (bill >= 50 && bill <200){  
+      percentage = .15;
+     } else {
+      percentage = .1;
+    }
+    return percentage * bill;
+  }
+  console.log(tipCalculator(100));  
+
+  var bills = [124, 48, 268];
+  var tips =[tipCalculator(bills[0]),
+             tipCalculator(bills[1]),
+             tipCalculator(bills[2])];
+
+  var finalValues = [bills[0] + tips[0],
+                     bills[1] + tips[1],
+                     bills[2] + tips[2]];
+
+console.log(tips, finalValues);
+  
