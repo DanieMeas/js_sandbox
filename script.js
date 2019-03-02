@@ -82,7 +82,7 @@ console.log(markBmi);
 console.log('Is Marks BMI higher than Johns ' + (markBmi > johnBmi)); */
 
 /*IF ELSE STATEMENTS */
- var firstName = 'John';
+/* var firstName = 'John';
  var maritalStatus = 'single';
 
  if (maritalStatus === 'married') {
@@ -149,38 +149,74 @@ console.log(drink);
 
 var job = 'designer';
 switch (job) {
-    case 'teacher':
-    case 'instructer':
-    console.log(firstName + 'teaches kids to code');
-    break;
-    case 'driver':
-    console.log(firstName + 'drives an uber in Dallas');
-    break;
-    case 'designer':
-    console.log(firstName + 'designs beautiful websites');
-    break;
-    default: 
-    console.log(firstName + 'John does something else');
+  case 'teacher':
+  case 'instructer':
+  console.log(firstName + 'teaches kids to code');
+  break;
+  case 'driver':
+  console.log(firstName + 'drives an uber in Dallas');
+  break;
+  case 'designer':
+  console.log(firstName + 'designs beautiful websites');
+  break;
+  default: 
+  console.log(firstName + 'John does something else');
 
 }
 
 
 age = 10;
 switch (true){
-    case age < 13:
-        console.log(firstName + ' is a boy.');
-        break;
-    case age >= 13 && age < 20:
-        console.log(firstName + 'is a teenager');
-        break;
-    case age > 20 && age < 30:
-        console.log(firstName + 'is a young man');
-        break;
-    default:
-        console.log(firstName + 'is a man')
+  case age < 13:
+    console.log(firstName + ' is a boy.');
+    break;
+  case age >= 13 && age < 20:
+    console.log(firstName + 'is a teenager');
+    break;
+  case age > 20 && age < 30:
+    console.log(firstName + 'is a young man');
+    break;
+  default:
+    console.log(firstName + 'is a man')
 
 }
+//fasly values: Udenfefined, null, 0, "", NaN
+//Tuthy values: NOT falsey values
 
+var height = 23; 
 
+if (height || height === 0) {
+  console.log('variable is defined');
+  } else {
+    console.log('variable has NOT been defined');
+  }
 
+  //Equality Operators
+  if(height === '23'){
+    console.log('The == operator does type coercion!');
+  }
+  
+  */
+//Coding challange 2
+var jName ="john'sTeam";
+var mName ="mark'sTeam";
 
+var firstJohn = 5;
+var secondJohn = 5;
+var thirdJohn = 5;
+var teamJohnAverage = (firstJohn + secondJohn + thirdJohn)/3;
+  console.log(teamJohnAverage)
+
+var firstMike = 5;
+var secondMike = 5;
+var thirdMike = 5;
+var teamMikeAverage = (firstMike + secondMike + thirdMike)/3;
+  console.log(teamMikeAverage)
+  
+  if(teamJohnAverage > teamMikeAverage) {
+      console.log(jName + ' won with an average score of ' + teamJohnAverage);
+    } else if (teamJohnAverage === teamMikeAverage) {
+      console.log('its a tie with a score of ' + teamMikeAverage);
+    } else {
+      console.log(mName + ' won with an average score of ' + teamMikeAverage);
+    }
